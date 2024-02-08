@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Conditions Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Grow Conditions Advisor</h1>
+<form id="growConditionsForm">
+    <label for="strain">Strain:</label>
+    <input type="text" id="strain" name="strain"><br><br>
+    
+    <label for="medium">Grow Medium:</label>
+    <select id="medium" name="medium">
+      <option value="soil">Soil</option>
+      <option value="hydroponics">Hydroponics</option>
+      <!-- Add more options as needed -->
+    </select><br><br>
+    
+    <label for="watts">Watts of Lights:</label>
+    <input type="number" id="watts" name="watts"><br><br>
+    
+    <label>Starting From:</label>
+    <input type="radio" id="clone" name="startFrom" value="clone">
+    <label for="clone">Clone</label>
+    <input type="radio" id="seed" name="startFrom" value="seed">
+    <label for="seed">Seed</label><br><br>
+    
+    <label for="tentSize">Tent Size (in sq. ft.):</label>
+    <input type="number" id="tentSize" name="tentSize"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+  
+  <div id="recommendations"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  
